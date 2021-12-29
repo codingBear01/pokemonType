@@ -33,6 +33,10 @@ img {
   border: 1px solid black;
 }
 
+.type-box:hover .types {
+  display: block;
+}
+
 h2 {
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -41,12 +45,33 @@ h2 {
 .type-selection-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.type-selection-box label {
-  margin-right: 0.5rem;
+.types {
+  display: none;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0.3rem 0;
+}
+
+.types li:hover {
+  background-color: #95afcb;
+}
+
+.defense-type-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .type-input-form {

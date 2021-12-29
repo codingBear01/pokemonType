@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
 
@@ -12,81 +12,309 @@
     <div class="wrapper">
       <div class="type-box">
         <h2 class="attack-title">attacking type</h2>
-        <form class="type-selection-box">
-          <label for="attack-type">제1타입:</label>
-          <select name="types" class="attack-type">
-            <option id="노말" value="노말">노말</option>
-            <option id="불꽃" value="불꽃">불꽃</option>
-            <option id="물" value="물">물</option>
-            <option id="전기" value="전기">전기</option>
-            <option id="풀" value="풀">풀</option>
-            <option id="얼음" value="얼음">얼음</option>
-            <option id="격투" value="격투">격투</option>
-            <option id="독" value="독">독</option>
-            <option id="땅" value="땅">땅</option>
-            <option id="비행" value="비행">비행</option>
-            <option id="에스퍼" value="에스퍼">에스퍼</option>
-            <option id="벌레" value="벌레">벌레</option>
-            <option id="바위" value="바위">바위</option>
-            <option id="고스트" value="고스트">고스트</option>
-            <option id="드래곤" value="드래곤">드래곤</option>
-            <option id="악" value="악">악</option>
-            <option id="강철" value="강철">강철</option>
-            <option id="페어리" value="페어리">페어리</option>
-          </select>
-        </form>
+        <div class="type-selection-box">
+          <ul class="types attack-type">
+            <li id="노말">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg"
+              />노말
+            </li>
+            <li id="불꽃">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg"
+              />불꽃
+            </li>
+            <li id="물">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg"
+              />물
+            </li>
+            <li id="전기">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg"
+              />전기
+            </li>
+            <li id="풀">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg"
+              />풀
+            </li>
+            <li id="얼음">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg"
+              />얼음
+            </li>
+            <li id="격투">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg"
+              />격투
+            </li>
+            <li id="독">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg"
+              />독
+            </li>
+            <li id="땅">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg"
+              />땅
+            </li>
+          </ul>
+
+          <ul class="types attack-type">
+            <li id="비행">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg"
+              />비행
+            </li>
+            <li id="에스퍼">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg"
+              />에스퍼
+            </li>
+            <li id="벌레">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg"
+              />벌레
+            </li>
+            <li id="바위">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg"
+              />바위
+            </li>
+            <li id="고스트">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pok%C3%A9mon_Ghost_Type_Icon.svg"
+              />고스트
+            </li>
+            <li id="드래곤">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Pok%C3%A9mon_Dragon_Type_Icon.svg"
+              />드래곤
+            </li>
+            <li id="악">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg"
+              />악
+            </li>
+            <li id="강철">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg"
+              />강철
+            </li>
+            <li id="페어리">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg"
+              />페어리
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="type-box">
         <h2 class="defense-title">defending type</h2>
-        <form class="type-selection-box">
-          <label for="first-defense-type">제1타입:</label>
-          <select name="types" class="first-defense-type">
-            <option id="노말" value="노말">노말</option>
-            <option id="불꽃" value="불꽃">불꽃</option>
-            <option id="물" value="물">물</option>
-            <option id="전기" value="전기">전기</option>
-            <option id="풀" value="풀">풀</option>
-            <option id="얼음" value="얼음">얼음</option>
-            <option id="격투" value="격투">격투</option>
-            <option id="독" value="독">독</option>
-            <option id="땅" value="땅">땅</option>
-            <option id="비행" value="비행">비행</option>
-            <option id="에스퍼" value="에스퍼">에스퍼</option>
-            <option id="벌레" value="벌레">벌레</option>
-            <option id="바위" value="바위">바위</option>
-            <option id="고스트" value="고스트">고스트</option>
-            <option id="드래곤" value="드래곤">드래곤</option>
-            <option id="악" value="악">악</option>
-            <option id="강철" value="강철">강철</option>
-            <option id="페어리" value="페어리">페어리</option>
-          </select>
-        </form>
+        <div class="defense-type-wrapper">
+          <h4>제1타입</h4>
+          <div class="type-selection-box">
+            <ul class="types first-defense-type">
+              <li id="노말">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg"
+                />노말
+              </li>
+              <li id="불꽃">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg"
+                />불꽃
+              </li>
+              <li id="물">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg"
+                />물
+              </li>
+              <li id="전기">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg"
+                />전기
+              </li>
+              <li id="풀">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg"
+                />풀
+              </li>
+              <li id="얼음">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg"
+                />얼음
+              </li>
+              <li id="격투">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg"
+                />격투
+              </li>
+              <li id="독">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg"
+                />독
+              </li>
+              <li id="땅">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg"
+                />땅
+              </li>
+            </ul>
 
-        <form class="type-selection-box">
-          <label for="">제2타입: </label>
-          <select name="types" class="second-defense-type">
-            <option id="없음" value="없음">없음</option>
-            <option id="노말" value="노말">노말</option>
-            <option id="불꽃" value="불꽃">불꽃</option>
-            <option id="물" value="물">물</option>
-            <option id="전기" value="전기">전기</option>
-            <option id="풀" value="풀">풀</option>
-            <option id="얼음" value="얼음">얼음</option>
-            <option id="격투" value="격투">격투</option>
-            <option id="독" value="독">독</option>
-            <option id="땅" value="땅">땅</option>
-            <option id="비행" value="비행">비행</option>
-            <option id="에스퍼" value="에스퍼">에스퍼</option>
-            <option id="벌레" value="벌레">벌레</option>
-            <option id="바위" value="바위">바위</option>
-            <option id="고스트" value="고스트">고스트</option>
-            <option id="드래곤" value="드래곤">드래곤</option>
-            <option id="악" value="악">악</option>
-            <option id="강철" value="강철">강철</option>
-            <option id="페어리" value="페어리">페어리</option>
-          </select>
-        </form>
+            <ul class="types first-defense-type">
+              <li id="비행">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg"
+                />비행
+              </li>
+              <li id="에스퍼">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg"
+                />에스퍼
+              </li>
+              <li id="벌레">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg"
+                />벌레
+              </li>
+              <li id="바위">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg"
+                />바위
+              </li>
+              <li id="고스트">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pok%C3%A9mon_Ghost_Type_Icon.svg"
+                />고스트
+              </li>
+              <li id="드래곤">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Pok%C3%A9mon_Dragon_Type_Icon.svg"
+                />드래곤
+              </li>
+              <li id="악">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg"
+                />악
+              </li>
+              <li id="강철">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg"
+                />강철
+              </li>
+              <li id="페어리">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg"
+                />페어리
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="defense-type-wrapper">
+          <h4>제2타입</h4>
+          <div class="type-selection-box">
+            <ul class="types second-defense-type">
+              <li id="없음">없음</li>
+              <li id="노말">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg"
+                />노말
+              </li>
+              <li id="불꽃">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg"
+                />불꽃
+              </li>
+              <li id="물">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg"
+                />물
+              </li>
+              <li id="전기">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg"
+                />전기
+              </li>
+              <li id="풀">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg"
+                />풀
+              </li>
+              <li id="얼음">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg"
+                />얼음
+              </li>
+              <li id="격투">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg"
+                />격투
+              </li>
+              <li id="독">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg"
+                />독
+              </li>
+              <li id="땅">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg"
+                />땅
+              </li>
+            </ul>
+
+            <ul class="types second-defense-type">
+              <li id="비행">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg"
+                />비행
+              </li>
+              <li id="에스퍼">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg"
+                />에스퍼
+              </li>
+              <li id="벌레">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg"
+                />벌레
+              </li>
+              <li id="바위">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg"
+                />바위
+              </li>
+              <li id="고스트">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pok%C3%A9mon_Ghost_Type_Icon.svg"
+                />고스트
+              </li>
+              <li id="드래곤">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Pok%C3%A9mon_Dragon_Type_Icon.svg"
+                />드래곤
+              </li>
+              <li id="악">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg"
+                />악
+              </li>
+              <li id="강철">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg"
+                />강철
+              </li>
+              <li id="페어리">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg"
+                />페어리
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -105,7 +333,7 @@
 
     <span class="result-msg">효과는 굉장했다!</span>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/6d66577a7c.js"
       crossorigin="anonymous"
