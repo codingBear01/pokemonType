@@ -1,6 +1,5 @@
-export let typeList = [
-  {
-    타입명: "없음",
+export let typeList = {
+  없음: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -23,8 +22,7 @@ export let typeList = [
     img: "",
   },
 
-  {
-    타입명: "노말",
+  노말: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -46,8 +44,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg",
   },
-  {
-    타입명: "불꽃",
+  불꽃: {
     노말: 1,
     불꽃: 0.5,
     물: 0.5,
@@ -69,8 +66,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg",
   },
-  {
-    타입명: "물",
+  물: {
     노말: 1,
     불꽃: 2,
     물: 0.5,
@@ -92,8 +88,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg",
   },
-  {
-    타입명: "전기",
+  전기: {
     노말: 1,
     불꽃: 1,
     물: 2,
@@ -115,8 +110,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pok%C3%A9mon_Electric_Type_Icon.svg",
   },
-  {
-    타입명: "풀",
+  풀: {
     노말: 1,
     불꽃: 0.5,
     물: 2,
@@ -138,8 +132,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg",
   },
-  {
-    타입명: "얼음",
+  얼음: {
     노말: 1,
     불꽃: 0.5,
     물: 0.5,
@@ -161,8 +154,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg",
   },
-  {
-    타입명: "격투",
+  격투: {
     노말: 2,
     불꽃: 1,
     물: 1,
@@ -184,8 +176,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg",
   },
-  {
-    타입명: "독",
+  독: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -207,8 +198,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg",
   },
-  {
-    타입명: "땅",
+  땅: {
     노말: 1,
     불꽃: 2,
     물: 1,
@@ -230,8 +220,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pok%C3%A9mon_Ground_Type_Icon.svg",
   },
-  {
-    타입명: "비행",
+  비행: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -253,8 +242,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Pok%C3%A9mon_Flying_Type_Icon.svg",
   },
-  {
-    타입명: "에스퍼",
+  에스퍼: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -276,8 +264,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg",
   },
-  {
-    타입명: "벌레",
+  벌레: {
     노말: 1,
     불꽃: 0.5,
     물: 1,
@@ -299,8 +286,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pok%C3%A9mon_Bug_Type_Icon.svg",
   },
-  {
-    타입명: "바위",
+  바위: {
     노말: 1,
     불꽃: 2,
     물: 1,
@@ -322,8 +308,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg",
   },
-  {
-    타입명: "고스트",
+  고스트: {
     노말: 0,
     불꽃: 1,
     물: 1,
@@ -345,8 +330,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Pok%C3%A9mon_Ghost_Type_Icon.svg",
   },
-  {
-    타입명: "드래곤",
+  드래곤: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -368,8 +352,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pok%C3%A9mon_Dragon_Type_Icon.svg",
   },
-  {
-    타입명: "악",
+  악: {
     노말: 1,
     불꽃: 1,
     물: 1,
@@ -391,8 +374,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg",
   },
-  {
-    타입명: "강철",
+  강철: {
     노말: 1,
     불꽃: 0.5,
     물: 0.5,
@@ -414,8 +396,7 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg",
   },
-  {
-    타입명: "페어리",
+  페어리: {
     노말: 1,
     불꽃: 0.5,
     물: 1,
@@ -437,4 +418,4 @@ export let typeList = [
 
     img: "https://upload.wikimedia.org/wikipedia/commons/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg",
   },
-];
+};

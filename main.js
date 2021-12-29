@@ -1,7 +1,7 @@
 import { typeList } from "./type.js";
 
-let AttackTypeSelect = document.querySelector(".attack-type");
-let AttackTypeInput = document.querySelector(".attack-type-input");
+let attackTypeSelect = document.querySelector(".attack-type");
+let attackTypeInput = document.querySelector(".attack-type-input");
 
 let firstDefenseTypeSelect = document.querySelector(".first-defense-type");
 let secondDefenseTypeSelect = document.querySelector(".second-defense-type");
@@ -10,43 +10,34 @@ let secondDefenseTypeInput = document.querySelector(
   ".second-defense-type-input"
 );
 
-let selectedType = "노말";
+attackTypeSelect.addEventListener("change", function AttackInput() {
+  let attackSelectedType =
+    attackTypeSelect.options[attackTypeSelect.selectedIndex].text;
 
-for (let i = 0; i < typeList.length; i++) {
-  console.log(typeList[i].타입명);
-}
-
-AttackTypeSelect.addEventListener("change", function AttackInput() {
-  let selectedType =
-    AttackTypeSelect.options[AttackTypeSelect.selectedIndex].text;
-  AttackTypeInput.innerHTML = selectedType;
-
-  console.log(AttackTypeInput.innerText);
+  attackTypeInput.innerHTML = `<img src="${typeList[attackSelectedType].img}"/>${attackSelectedType}`;
 });
 
 firstDefenseTypeSelect.addEventListener("change", function firstDefenseInput() {
-  let selectedType =
+  firstDefenseSelectedType =
     firstDefenseTypeSelect.options[firstDefenseTypeSelect.selectedIndex].text;
-  firstDefenseTypeInput.innerHTML = `<img class="flag-img"src="${typeList[selectedType].img}"/>${selectedType}`;
 
-  console.log(firstDefenseTypeInput.innerText);
+  firstDefenseTypeInput.innerHTML = firstDefenseSelectedType;
 });
 
 secondDefenseTypeSelect.addEventListener(
   "change",
   function secondDefenseInput() {
-    let selectedType =
+    secondDefenseSelectedType =
       secondDefenseTypeSelect.options[secondDefenseTypeSelect.selectedIndex]
         .text;
-    secondDefenseTypeInput.innerHTML = `<img class="flag-img"src="${typeList[selectedType].img}"/>${selectedType}`;
-
-    console.log(secondDefenseTypeInput.innerText);
+    secondDefenseTypeInput.innerHTML = secondDefenseSelectedType;
   }
 );
 
 // function convert(type) {
 //   let amount = 0;
 //     //입력갑 받기
+// amount = document.getElementById("fromAmount").value;
 
 //     // 환전하기
 //     let convertedAmount = amount * currencyRatio[fromCurrency][toCurrency];
