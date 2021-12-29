@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="type-box">
+        <h2 class="attack-title">attacking type</h2>
+        <form class="type-selection-box">
+          <label for="attack-type">제1타입:</label>
+          <select name="types" class="attack-type">
+            <option id="노말" value="노말">노말</option>
+            <option id="불꽃" value="불꽃">불꽃</option>
+            <option id="물" value="물">물</option>
+            <option id="전기" value="전기">전기</option>
+            <option id="풀" value="풀">풀</option>
+            <option id="얼음" value="얼음">얼음</option>
+            <option id="격투" value="격투">격투</option>
+            <option id="독" value="독">독</option>
+            <option id="땅" value="땅">땅</option>
+            <option id="비행" value="비행">비행</option>
+            <option id="에스퍼" value="에스퍼">에스퍼</option>
+            <option id="벌레" value="벌레">벌레</option>
+            <option id="바위" value="바위">바위</option>
+            <option id="고스트" value="고스트">고스트</option>
+            <option id="드래곤" value="드래곤">드래곤</option>
+            <option id="악" value="악">악</option>
+            <option id="강철" value="강철">강철</option>
+            <option id="페어리" value="페어리">페어리</option>
+          </select>
+        </form>
+      </div>
+
+      <div class="type-box">
+        <h2 class="defense-title">defending type</h2>
+        <form class="type-selection-box">
+          <label for="first-defense-type">제1타입:</label>
+          <select name="types" class="first-defense-type">
+            <option id="노말" value="노말">노말</option>
+            <option id="불꽃" value="불꽃">불꽃</option>
+            <option id="물" value="물">물</option>
+            <option id="전기" value="전기">전기</option>
+            <option id="풀" value="풀">풀</option>
+            <option id="얼음" value="얼음">얼음</option>
+            <option id="격투" value="격투">격투</option>
+            <option id="독" value="독">독</option>
+            <option id="땅" value="땅">땅</option>
+            <option id="비행" value="비행">비행</option>
+            <option id="에스퍼" value="에스퍼">에스퍼</option>
+            <option id="벌레" value="벌레">벌레</option>
+            <option id="바위" value="바위">바위</option>
+            <option id="고스트" value="고스트">고스트</option>
+            <option id="드래곤" value="드래곤">드래곤</option>
+            <option id="악" value="악">악</option>
+            <option id="강철" value="강철">강철</option>
+            <option id="페어리" value="페어리">페어리</option>
+          </select>
+        </form>
+
+        <form class="type-selection-box">
+          <label for="">제2타입: </label>
+          <select name="types" class="second-defense-type">
+            <option id="없음" value="없음">없음</option>
+            <option id="노말" value="노말">노말</option>
+            <option id="불꽃" value="불꽃">불꽃</option>
+            <option id="물" value="물">물</option>
+            <option id="전기" value="전기">전기</option>
+            <option id="풀" value="풀">풀</option>
+            <option id="얼음" value="얼음">얼음</option>
+            <option id="격투" value="격투">격투</option>
+            <option id="독" value="독">독</option>
+            <option id="땅" value="땅">땅</option>
+            <option id="비행" value="비행">비행</option>
+            <option id="에스퍼" value="에스퍼">에스퍼</option>
+            <option id="벌레" value="벌레">벌레</option>
+            <option id="바위" value="바위">바위</option>
+            <option id="고스트" value="고스트">고스트</option>
+            <option id="드래곤" value="드래곤">드래곤</option>
+            <option id="악" value="악">악</option>
+            <option id="강철" value="강철">강철</option>
+            <option id="페어리" value="페어리">페어리</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="type-input-form">
+      <div class="type-input-wrap">
+        <span class="attack-type-input"></span>
+      </div>
+
+      <span>vs</span>
+
+      <div class="type-input-wrap">
+        <span class="first-defense-type-input"></span>
+        <span class="second-defense-type-input"></span>
+      </div>
+    </div>
+
+    <span class="result-msg">효과는 굉장했다!</span>
+
+    <script type="module" src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d66577a7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
