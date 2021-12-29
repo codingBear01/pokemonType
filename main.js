@@ -9,12 +9,16 @@ let firstDefenseTypeInput = document.querySelector(".first-defense-type-input");
 let secondDefenseTypeInput = document.querySelector(
   ".second-defense-type-input"
 );
+let attackSelectedType = "";
+let firstDefenseSelectedType = "";
+let secondDefenseSelectedType = "";
 
-attackTypeSelect.addEventListener("change", function AttackInput() {
-  let attackSelectedType =
-    attackTypeSelect.options[attackTypeSelect.selectedIndex].text;
+document.querySelectorAll(".attack-type option").forEach(function (item) {
+  item.addEventListener("change", function AttackInput() {
+    attackSelectedType = item.options[item.selectedIndex].text;
 
-  attackTypeInput.innerHTML = `<img src="${typeList[attackSelectedType].img}"/>${attackSelectedType}`;
+    attackTypeInput.innerHTML = `<img src="${typeList[attackSelectedType].img}"/>${attackSelectedType}`;
+  });
 });
 
 firstDefenseTypeSelect.addEventListener("change", function firstDefenseInput() {
@@ -30,6 +34,7 @@ secondDefenseTypeSelect.addEventListener(
     secondDefenseSelectedType =
       secondDefenseTypeSelect.options[secondDefenseTypeSelect.selectedIndex]
         .text;
+
     secondDefenseTypeInput.innerHTML = secondDefenseSelectedType;
   }
 );
