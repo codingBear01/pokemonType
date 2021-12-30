@@ -13,12 +13,14 @@ let firstDefenseTypeInput = document.querySelector(".first-defense-type-input");
 let secondDefenseTypeInput = document.querySelector(
   ".second-defense-type-input"
 );
+let resultMsg = document.querySelector(".result-msg");
+const refreshBtn = document.querySelector(".refresh-btn");
 
-let attackSelectedType = "노말";
-let firstDefenseSelectedType = "노말";
-let secondDefenseSelectedType = "노말";
+let attackSelectedType = "없음";
+let firstDefenseSelectedType = "없음";
+let secondDefenseSelectedType = "없음";
 
-attackTypeSelect.forEach(function (item) {
+attackTypeSelect.forEach((item) => {
   item.addEventListener("click", function () {
     attackSelectedType = this.id;
 
@@ -28,7 +30,7 @@ attackTypeSelect.forEach(function (item) {
   });
 });
 
-firstDefenseTypeSelect.forEach(function (item) {
+firstDefenseTypeSelect.forEach((item) => {
   item.addEventListener("click", function () {
     firstDefenseSelectedType = this.id;
 
@@ -38,12 +40,16 @@ firstDefenseTypeSelect.forEach(function (item) {
   });
 });
 
-secondDefenseTypeSelect.forEach(function (item) {
+secondDefenseTypeSelect.forEach((item) => {
   item.addEventListener("click", function () {
     secondDefenseSelectedType = this.id;
 
     secondDefenseTypeInput.innerHTML = `<img src="${typeList[secondDefenseSelectedType].img}"/>${secondDefenseSelectedType}`;
 
+    if (secondDefenseTypeInput.innerHTML == firstDefenseTypeInput.innerHTML) {
+      alert("다른 타입을 선택하세요!");
+      secondDefenseTypeInput.innerHTML = "";
+    }
     result();
   });
 });
@@ -52,7 +58,6 @@ function result() {
   let calResult =
     typeList[attackSelectedType][firstDefenseSelectedType] *
     typeList[attackSelectedType][secondDefenseSelectedType];
-  let resultMsg = document.querySelector(".result-msg");
 
   if (calResult == 4) {
     resultMsg.innerText = "효과는 4배다!";
@@ -68,3 +73,13 @@ function result() {
     resultMsg.innerText = "효과는 없다!";
   }
 }
+
+refreshBtn.addEventListener("click", () => {
+  attackTypeInput.innerHTML = "";
+  firstDefenseTypeInput.innerHTML = "";
+  secondDefenseTypeInput.innerHTML = "";
+  resultMsg.innerHTML = "";
+});
+
+// css/js로 꾸미기
+// 반응형으루~

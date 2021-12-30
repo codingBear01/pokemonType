@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -15,11 +22,12 @@ body {
 img {
   width: 1.25rem;
   height: 1.25rem;
+  margin-right: 0.3rem;
 }
 
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 80%;
 }
@@ -30,7 +38,8 @@ img {
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
 .type-box:hover .types {
@@ -49,6 +58,11 @@ h2 {
   width: 100%;
 }
 
+h4 {
+  text-align: center;
+  margin: 0.3rem 0;
+}
+
 .types {
   display: none;
   width: 100%;
@@ -60,10 +74,12 @@ li {
   align-items: center;
   list-style: none;
   padding: 0.3rem 0;
+  font-weight: 600;
 }
 
 .types li:hover {
   background-color: #95afcb;
+  cursor: pointer;
 }
 
 .defense-type-wrapper {
@@ -78,9 +94,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
+  width: 60%;
   margin: 1rem 0;
-  border: 1px solid black;
+  font-weight: 600;
 }
 
 .type-input-wrap {
@@ -88,11 +104,130 @@ li {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 .type-input-wrap span {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+}
+
+.result-msg {
+  font-weight: 600;
+}
+
+.refresh-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  margin-top: 1.2rem;
+  border-style: none;
+  border-radius: 25px;
+  background: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.refresh-btn img {
+  margin: 0 0.5rem;
+}
+
+#노말:hover {
+  background: #919aa2;
+  color: azure;
+}
+
+#불꽃:hover {
+  background: #ff9741;
+  color: azure;
+}
+
+#물:hover {
+  background: #3692dc;
+  color: azure;
+}
+
+#전기:hover {
+  background: #fbd100;
+  color: azure;
+}
+
+#풀:hover {
+  background: #38bf4b;
+  color: azure;
+}
+
+#얼음:hover {
+  background: #56c9bc;
+  color: azure;
+}
+
+#격투:hover {
+  background: #e0306a;
+  color: azure;
+}
+
+#독:hover {
+  background: #b567ce;
+  color: azure;
+}
+
+#땅:hover {
+  background: #e87236;
+  color: azure;
+}
+
+#비행:hover {
+  background: #89aae3;
+  color: azure;
+}
+
+#에스퍼:hover {
+  background: #ff6675;
+  color: azure;
+}
+
+#벌레:hover {
+  background: #8bab5e;
+  color: azure;
+}
+
+#바위:hover {
+  background: #c8b686;
+  color: azure;
+}
+
+#고스트:hover {
+  background: #4c6ab2;
+  color: azure;
+}
+
+#드래곤:hover {
+  background: #006fc9;
+  color: azure;
+}
+
+#악:hover {
+  background: #5b5466;
+  color: azure;
+}
+
+#강철:hover {
+  background: #5a8ea2;
+  color: azure;
+}
+
+#페어리:hover {
+  background: #fb89eb;
+  color: azure;
+}
+
+#없음:hover {
+  background: rgb(25, 25, 25);
+  color: azure;
 }
